@@ -92,7 +92,57 @@
         </li>
      </ul>
  </div>
+ <button class="competences__spinBtn">
+    >
+ </button>
 </section>
+<section class="contact">
+    <h2 class="contact__header">Skontaktuj się z nami</h2>
+    <p class="contact__sideHeader">Zadzwoń <span>+48 535 015 835</span> lub wypełnij formularz.</p>
+    <form action="submit" class="contact__form">
+        <div class="contact__formField">
+            <label for="name"></label>
+            <input type="text" id='name' name='name' placeholder='Imię i Nazwisko'>
+        </div>
+        <div class="contact__formField">
+            <label for="number"></label>
+            <input type="tel" id='number' name='number' placeholder='Telefon'>
+        </div>
+        <div class="contact__formField">
+            <label for="email"></label>
+            <input type="email" id='email' name='email' placeholder='E-mail'>
+        </div>
+        <div class="contact__formField">
+            <label for="company"></label>
+            <input type="text" id='company' name='company' placeholder='Firma'>
+        </div>
+        <div class="contact__formField">
+            <label for="workers"></label>
+           <select name="workers" id="workers" >
+            <option value="" disabled selected>Ilość pracowników</option>
+               <option value="1">1</option>
+           </select>
+        </div>
+        <div class="contact__formField">
+            <label for="income"></label>
+            <select name="income" id="income" >
+                <option value="" disabled selected>Roczny dochód firmy</option>
+                <option value="100000">100 000tys</option>
+            </select>
+        </div>
+        <div class="contact__formField">
+            <label for="message"></label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+        </div>
+        <div class="contact__formField">
+            <input name='rules' id='rules' type="checkbox" class="contact__checkbox">
+            <label class='contact__checkboxLabel'for="rules">Zapoznałem(-łam) się z <a href="#" class="contact__link">Polityką prywatności</a> oraz z <a href="#" class="contact__link">Zastrzeżeniami prawnymi</a>.</label>
+        </div>
+        <button class="contact__btn">Wyślij <img src="/assets/arrow.svg" alt=""></button>
+    </form>
+
+</section>
+<script src="main.js"></script>
 </body>
 </html>
 
