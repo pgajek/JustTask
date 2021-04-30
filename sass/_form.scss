@@ -1,5 +1,4 @@
 .contact {
-  min-height: 100vh;
   width: 100vw;
   background-image: url("/assets/bg.png");
   background-position: center;
@@ -24,11 +23,12 @@
 }
 .contact__form {
   width: 100%;
-  max-width: 1024px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 .contact__formField {
   display: flex;
@@ -88,4 +88,66 @@
   height: 40px;
   border: #35a8e0 solid 1px;
   border-radius: 5px;
+}
+@media (orientation: portrait) and (min-width: 768px) {
+  .contact__header {
+    font-size: 36px;
+  }
+
+  .contact__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact__formField {
+    width: auto;
+    input,
+    select {
+      height: 54px;
+    }
+    margin: 0 5px;
+    textarea {
+      width: 630px;
+    }
+    padding: 5px 0;
+    &:nth-last-of-type(1) {
+      width: 100%;
+    }
+  }
+
+  .contact__checkboxLabel {
+    font-size: 14px;
+  }
+  .contact__link {
+    font-size: 14px;
+  }
+}
+@media (orientation: landscape) and (min-width: 700px) {
+  .contact__header {
+    font-size: 36px;
+  }
+  .contact__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact__formField {
+    width: auto;
+    input,
+    select {
+      height: 54px;
+    }
+    margin: 0 5px;
+    textarea {
+      width: 630px;
+    }
+    padding: 5px 0;
+    &:nth-last-of-type(1) {
+      width: 100%;
+    }
+  }
+  .contact__checkboxLabel {
+    font-size: 14px;
+  }
+  .contact__link {
+    font-size: 14px;
+  }
 }
