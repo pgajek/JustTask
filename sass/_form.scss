@@ -59,6 +59,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #565e66;
+    cursor: pointer;
   }
   padding: 5px 0;
 }
@@ -149,5 +150,10 @@
   }
   .contact__link {
     font-size: 14px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1280px) {
+  .contact {
+    background-size: 100%;
   }
 }
